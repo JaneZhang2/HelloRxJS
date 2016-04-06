@@ -1,7 +1,11 @@
 # HelloRxJS
 
-ES2016转译器Babel使用指南:http://www.ruanyifeng.com/blog/2016/01/babel.html
+ES2016转译器Babel入门指南:http://www.ruanyifeng.com/blog/2016/01/babel.html
+webpack入门指南:http://webpack.github.io/docs/tutorials/getting-started/
 
 
 #目录结构
 .babelrc
+
+#vendor
+babel-polyfill
