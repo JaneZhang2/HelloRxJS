@@ -1,9 +1,13 @@
 var path = require('path'),
+  webpack = require('webpack'),
   HtmlwebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
   context: path.join(__dirname, 'src'),
-  entry: "./index",
+  entry: {
+    vendor: './vendor',
+    bundle: './index'
+  },
   output: {
     path: path.join(__dirname, 'dist'),
     filename: "bundle.js"
@@ -14,6 +18,8 @@ module.exports = {
     ]
   },
   plugins: [
+    new webpack.optimize.DedupePlugin(),
+    new webpack.optimize.CommonsChunkPlugin('vendor', 'vendor.js', Infinity),
     new HtmlwebpackPlugin({
       template: './index.html'
     })
