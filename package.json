@@ -1,0 +1,23 @@
+{
+  "name": "HelloRxJS",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JaneZhang2/HelloRxJS.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JaneZhang2/HelloRxJS/issues"
+  },
+  "homepage": "https://github.com/JaneZhang2/HelloRxJS#readme",
+  "dependencies": {
+    "rx": "^4.1.0"
+  }
+}
